@@ -1,0 +1,39 @@
+{
+   " версия " : " 0.2.0 " ,
+   " конфигурации " : [
+    {
+        " type " : " node " ,
+         " request " : " launch " ,
+         " name " : " Mocha All " ,
+         " program " : " $ {workspaceFolder} / node_modules / mocha / bin / _mocha " ,
+         " args " : [
+             " --timeout " ,
+             " 999999 " ,
+            " --цветы ",
+             " $ {workspaceFolder} / test "
+        ],
+        " console " : " IntegratedTerminal " ,
+         " internalConsoleOptions " : " neverOpen " ,
+         " skipFiles " : [
+             " <node_internals> /**/*.js "
+        ]
+    },
+    {
+        " тип " : " узел " ,
+         " запрос " : " запуск " ,
+         " имя " : " Текущий файл мокко " ,
+         " программа " : " $ {workspaceFolder} / node_modules / mocha / bin / _mocha " ,
+         " args " : [
+             " --timeout " ,
+             " 999999 " ,
+            " --цветы ",
+             " $ {file} "
+        ],
+        " console " : " IntegratedTerminal " ,
+         " internalConsoleOptions " : " neverOpen " ,
+         " skipFiles " : [
+             " <node_internals> /**/*.js "
+        ]
+    }
+  ]
+}
